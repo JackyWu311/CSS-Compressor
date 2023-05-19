@@ -1,19 +1,28 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: calc(100vh - 20px);
+    box-sizing: border-box;
   }
   
   h1 {
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
+    font-size: 40px;
   }
   
   textarea {
     width: 100%;
+    max-width: 600px;
     height: 200px;
     margin-bottom: 10px;
     padding: 10px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     resize: vertical;
@@ -22,13 +31,15 @@ body {
   .button-container {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
     margin-bottom: 10px;
   }
   
   button {
-    flex-basis: calc(50% - 5px);
+    flex-basis: 48%;
     padding: 8px 16px;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     color: #fff;
     background-color: #007bff;
@@ -44,10 +55,14 @@ body {
   p {
     margin-bottom: 5px;
     color: #555;
+    font-size: 30px;
   }
   
   .info-container {
     margin-top: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
   }
   
   #copyBtn {
