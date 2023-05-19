@@ -8,12 +8,16 @@
 <body>
   <h1>CSS Compressor</h1>
   <textarea id="input" placeholder="在此輸入 CSS 內容"></textarea>
-  <button id="compressBtn">壓縮</button>
+  <div class="button-container">
+    <button id="compressBtn">壓縮</button>
+    <button id="copyBtn">複製</button>
+  </div>
   <textarea id="output" placeholder="壓縮後的 CSS 內容"></textarea>
-  <p>原始大小: <span id="originalSize"></span> bytes</p>
-  <p>壓縮後大小: <span id="compressedSize"></span> bytes</p>
-  <p>節省了 <span id="savingsPercentage"></span>% 的大小</p>
-  <button id="copyBtn">複製</button>
+  <div class="info-container">
+    <p>原始大小: <span id="originalSize"></span> bytes</p>
+    <p>壓縮後大小: <span id="compressedSize"></span> bytes</p>
+    <p>節省了 <span id="savingsPercentage"></span>% 的大小</p>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
